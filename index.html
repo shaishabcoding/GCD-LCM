@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="utility.js"></script>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>GCD & LCM</title>
 </head>
 
 <body>
+  <header>
+    <h2 class="text-4xl font-bold text-center my-8 text-sky-500">লসাগু এবং গসাগু নির্ণয়</h2>
+  </header>
+  <main class="flex justify-center p-4 ">
+    <label for="nums_input" class="join join-vertical lg:join-horizontal">
+      <input class="input input-bordered join-item border-sky-400 focus:outline-none focus:border-sky-500" placeholder="সংখ্যা লিখুন: 1, 2, 3" id="nums_input" />
+      <div class="btn join-item rounded-r-full border-b-0 border-sky-400">গসাগু হলো :<span id="gcd">0</span></div>
+      <div class="btn join-item rounded-r-full border-b-0 border-sky-400">লসাগু হলো :<span id="lcm">0</span></div>
+      <button class="btn join-item rounded-r-full bg-sky-400 text-white border border-sky-400" id="find">নির্ণয় করুন</button>
+    </label>
 
+    <script src="main.js"></script>
+  </main>
 </body>
 
 </html>
