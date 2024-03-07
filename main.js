@@ -1,3 +1,10 @@
-console.log(findLCM(2, 3, 4)); // Output: 12
-console.log(findLCM(5, 10, 15, 20)); // Output: 60
-console.log(findLCM(7, 14, 21, 28, 35)); // Output: 140
+console.clear();
+id("find").onclick = _ => {
+  const nums = id("nums_input").value.includes(",") && id("nums_input").value.split(',').map(num => parseInt(num));
+
+  if (nums) {
+    id("lcm").textContent = findLCM(...nums);
+    id("gcd").textContent = findGCD(...nums);
+  } else
+    id("nums_input").focus();
+}
