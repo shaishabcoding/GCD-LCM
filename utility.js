@@ -10,4 +10,12 @@ const findLCM = (...nums) => {
   return nums.reduce((lcm, num) => calculateLCM(lcm, num));
 }
 
+const findFactors = (num) => (
+  [...Array(num + 1).keys()].filter(i => num % i === 0)
+);
+
+const findMultiplier = (num) => (
+  Array.from({ length: 10 }, (_, i) => num * (i + 1))
+);
+
 const id = (el) => document.getElementById(el);
